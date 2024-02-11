@@ -11,6 +11,8 @@ public:
     // コンストラクタ
     Block(uint32_t indexIn, const std::string &dataIn);
 
+    std::string PrevHash; // 前のブロックのハッシュ値を保持する変数
+
     // ブロックのハッシュを取得する関数
     std::string GetHash() const;
 
@@ -19,6 +21,7 @@ public:
 
     // ブロックのハッシュを計算する関数
     void MineBlock(uint32_t difficulty);
+    void MineBlock(unsigned int difficulty);
 
 private:
     uint32_t index; // ブロックのインデックス

@@ -3,14 +3,15 @@
 #include "network.h"
 #include "consensus.h"
 #include "utils.h"
-
 #include <iostream>
+#include "MyDBInterface.h"
+
 
 int main() {
     // ブロックチェーンの初期化
     Blockchain blockchain;
     // データベースインターフェースの初期化
-    DBInterface dbInterface;
+    MyDBInterface dbInterface;
     // ネットワークサービスの初期化
     Network network;
     // 合意形成アルゴリズムの初期化

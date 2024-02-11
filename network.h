@@ -37,3 +37,14 @@ public:
 };
 
 #endif // NETWORK_H
+
+
+class Network {
+public:
+    void initialize(); // ここにセミコロンが必要
+    void sendMessage(const std::string& message);
+    std::string receiveMessage();
+    void connectToNode(const std::string& address);
+    void disconnectNode(const std::string& address);
+    void cleanup();
+};
